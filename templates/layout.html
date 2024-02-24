@@ -14,7 +14,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" tabindex="-1" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -32,6 +32,42 @@
         </div>
       </div>
     </nav>
+    
+    <style>
+    .bottom-nav {
+      position: fixed; /* Fix the bar at the bottom */
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #e3f2fd;
+      display: flex; /* Arrange buttons horizontally */
+      justify-content: space-around; /* Distribute buttons evenly */
+  }
+
+  .bottom-nav a {
+      color: black; /* Set button text color */
+      text-decoration: none; /* Remove default link underline */
+      padding: 10px 20px; /* Add padding for better spacing */
+      font-size: 16px; /* Adjust font size as needed */
+  }
+
+  .bottom-nav a:hover {
+      background-color: #d0e6f4; /* Add hover effect */
+  }
+</style>
+</head>
+<body>
+<nav class="navbar" style="background-color: #e3f2fd">
+  </nav>
+
+<div class="bottom-nav">
+  <a href="#">Home</a>
+  <a href="#">Features</a>
+  <a href="#">Pricing</a>
+</div>
+
+
+
     <h1></h1>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
